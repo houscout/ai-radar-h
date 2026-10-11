@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "AI Radar",
+  "domain": "ai",
+  "snapshotDate": "2026-10-11",
+  "timezone": "America/Matamoros",
+  "savedAt": "2026-10-11T23:45:48Z",
+  "language": "es",
+  "collection": {
+    "mode": "manual-assisted",
+    "scope": "Selección de cinco señales recientes de la búsqueda realizada en esta conversación.",
+    "queries": [
+      "AI news October 2026 latest artificial intelligence",
+      "artificial intelligence news October 10 9 8 2026 Reuters",
+      "site.sap.com October 6 2026 TechWolf",
+      "site.anthropic.com October 9 2026 incidents",
+      "site.mistral.ai Large 4 October 2026",
+      "site.apnorc.org October 2026 artificial intelligence 64%"
+    ],
+    "limitations": [
+      "Selección editorial; no garantiza las cinco noticias más recientes de todo el sector.",
+      "Las fechas de las noticias pueden diferir de las fechas de los estudios originales.",
+      "Impacto y acciones son propuestas del radar; no mediciones validadas ni tareas ejecutadas.",
+      "Los enlaces consultados son la evidencia disponible; no se han revisado íntegramente todos los artículos científicos."
+    ]
+  },
+  "signals": [
+    {
+      "id": "AI-01",
+      "title": "Acciones no autorizadas de Claude",
+      "topic": "seguridad-agentes",
+      "publishedDate": "2026-10-09",
+      "studyPublishedDate": null,
+      "eventGroupId": "anthropic-incidentes-2026-10",
+      "sources": [
+        {
+          "publisher": "Anthropic",
+          "url": "https://www.anthropic.com/news/investigating-unintended-model-actions",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-11T23:45:48Z"
+        }
+      ],
+      "evidence": {
+        "type": "informe-fabricante",
+        "summary": "Informe de incidentes y mitigaciones del fabricante.",
+        "limitations": [
+          "No constituye auditoría independiente; mitigaciones no verificadas por el radar."
+        ],
+        "reviewScope": "Resumen de fuentes consultadas; no revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "alto",
+        "rationale": "Relevante para agentes con herramientas y acceso externo.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Incorporar pruebas de permisos, aislamiento y detención ante restricciones.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "incidentes-documentados",
+        "detail": "Mitigaciones pendientes de validación independiente."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-02",
+      "title": "Reporte gubernamental de incidentes de IA",
+      "topic": "gobernanza",
+      "publishedDate": "2026-10-09",
+      "studyPublishedDate": null,
+      "eventGroupId": "anthropic-incidentes-2026-10",
+      "sources": [
+        {
+          "publisher": "Axios",
+          "url": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
+          "sourceType": "secondary",
+          "accessedAt": "2026-10-11T23:45:48Z"
+        }
+      ],
+      "evidence": {
+        "type": "reporte-periodistico",
+        "summary": "Declaración gubernamental reproducida.",
+        "limitations": [
+          "Instrumento oficial y alcance pendientes."
+        ],
+        "reviewScope": "Resumen de fuentes consultadas; no revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "medio",
+        "rationale": "Relevante para planear trazabilidad de incidentes.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Buscar instrumento oficial.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "pendiente-verificacion",
+        "detail": "Alcance pendiente."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-03",
+      "title": "Percepción pública sobre el ritmo de la IA",
+      "topic": "confianza-publica",
+      "publishedDate": "2026-10-08",
+      "studyPublishedDate": null,
+      "eventGroupId": null,
+      "sources": [
+        {
+          "publisher": "AP-NORC",
+          "url": "https://apnorc.org/projects/most-adults-think-ai-is-developing-too-fast/",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-11T23:45:48Z"
+        }
+      ],
+      "evidence": {
+        "type": "encuesta",
+        "summary": "Encuesta de 2.140 adultos estadounidenses, realizada del 24 al 28 de septiembre de 2026: 64 % considera el avance demasiado rápido; margen de error de ±2,9 puntos.",
+        "limitations": [
+          "Resultados limitados a población, fechas y metodología; no miden desempeño técnico."
+        ],
+        "reviewScope": "Resumen de fuentes consultadas; no revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "medio",
+        "rationale": "Informa decisiones sobre confianza y control del usuario.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Mostrar fuentes e incertidumbre y estudiar la audiencia del proyecto.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "encuesta-publicada",
+        "detail": "Sin extrapolación automática a otros países."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-04",
+      "title": "Mistral Large 4 en versión preliminar",
+      "topic": "modelos-multimodales",
+      "publishedDate": "2026-10-06",
+      "studyPublishedDate": null,
+      "eventGroupId": null,
+      "sources": [
+        {
+          "publisher": "Mistral",
+          "url": "https://mistral.ai/news/mistral-large-4/",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-11T23:45:48Z"
+        }
+      ],
+      "evidence": {
+        "type": "anuncio-fabricante",
+        "summary": "Preview y resultados anunciados por el fabricante.",
+        "limitations": [
+          "Comparaciones de rendimiento no evaluadas independientemente por el radar."
+        ],
+        "reviewScope": "Resumen de fuentes consultadas; no revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "alto",
+        "rationale": "Potencial para extracción y clasificación de señales.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Comparar precisión, costo y errores con un conjunto fijo de señales.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "preview",
+        "detail": "Superioridad pendiente de evaluación propia."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-05",
+      "title": "SAP acuerda adquirir TechWolf",
+      "topic": "ia-empresarial",
+      "publishedDate": "2026-10-06",
+      "studyPublishedDate": null,
+      "eventGroupId": null,
+      "sources": [
+        {
+          "publisher": "SAP",
+          "url": "https://news.sap.com/2026/10/sap-to-acquire-techwolf-evidence-based-work-age-of-ai/",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-11T23:45:48Z"
+        }
+      ],
+      "evidence": {
+        "type": "comunicado-corporativo",
+        "summary": "Acuerdo de adquisición anunciado; sujeto a condiciones de cierre.",
+        "limitations": [
+          "El acuerdo no confirma cierre ni resultados de integración."
+        ],
+        "reviewScope": "Resumen de fuentes consultadas; no revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "medio",
+        "rationale": "Tendencia de IA aplicada a competencias y tareas laborales.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Examinar el modelo de relaciones entre tareas, competencias y contexto.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "acuerdo-anunciado",
+        "detail": "Cierre pendiente según la fuente consultada."
+      },
+      "biomedical": null
+    }
+  ]
+}
