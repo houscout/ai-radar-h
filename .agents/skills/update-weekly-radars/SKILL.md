@@ -52,7 +52,7 @@ Completar todas las propiedades exigidas: schemaVersion, project, domain, snapsh
 
 Para cada señal completar identificador, título, tema, fechas, sources, evidence, impact, action, state, eventGroupId y biomedical. Usar AI-01... o BIO-01...; la identidad archivada es fecha más ID. Usar null para datos opcionales desconocidos, no valores inventados. Mantener biomedical = null para IA.
 
-Validar con JSON Schema 2020-12 y formatos; comprobar además IDs únicos, ventana temporal, URLs verificadas, ausencia de duplicados, coherencia de dominios y evidencia regulatoria si se declara verified. Si no existe validador ejecutable, realizar revisión estructural explícita e informar que no se ejecutó un validador completo. Nunca confundir JSON válido con veracidad científica.
+Validar con JSON Schema 2020-12 y formatos mediante scripts/validate_snapshot.py SNAPSHOT SCHEMA --weekly (dependencias en scripts/requirements.txt). Comprobar además IDs únicos, ventana temporal, URLs verificadas, ausencia de duplicados, coherencia de dominios y evidencia regulatoria si se declara verified. El validador estructural no abre fuentes: verificar su contenido por separado. Si no existe validador ejecutable, realizar revisión estructural explícita e informar que no se ejecutó un validador completo. Nunca confundir JSON válido con veracidad científica.
 
 ## 5. Guardar y comprobar
 
@@ -65,5 +65,7 @@ Leer de nuevo cada archivo publicado y comparar contenido. Reportar enlaces, con
 ## Salida
 
 Devolver un resumen en español con cinco columnas: Fuente, Evidencia, Impacto, Acción y Estado, separado por radar. Enlazar JSON y señalar faltantes. No ejecutar las acciones recomendadas como parte de esta búsqueda.
+
+Para la ejecución local programada, scripts/run_weekly.py coordina ambos repositorios en copias aisladas, valida antes de publicar y registra resultados. Usar --check para comprobar autenticación y acceso sin lanzar una búsqueda ni publicar. El runtime local se configura en ~/.codex/radar-weekly/runtime.json; los registros quedan en ~/.codex/radar-weekly/logs y last-run.json. No ejecutar el modo completo por duplicado desde cada repositorio.
 
 La skill define el trabajo; solo un scheduler confirmado puede activarlo semanalmente. No anunciar programación activa sin identificador y confirmación de la herramienta o interfaz.
