@@ -1,0 +1,4 @@
+interface:
+  display_name: "Radares semanales AI y Biomed"
+  short_description: "Noticias verificadas y JSON semanal para ambos radares"
+  default_prompt: "Usa $update-weekly-radars para actualizar AI Radar y Biomedic Radar con las novedades de los últimos siete días, validar sus contratos y guardar cinco señales por proyecto."
