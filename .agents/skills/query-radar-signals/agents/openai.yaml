@@ -1,0 +1,6 @@
+interface:
+  display_name: "Consultar señales AI y Biomed"
+  short_description: "Consulta JSON por día, cantidad y orden en ambos radares"
+  default_prompt: "Usa $query-radar-signals para devolver cinco señales del último snapshot de ambos radares ordenadas por fecha."
+policy:
+  allow_implicit_invocation: true
