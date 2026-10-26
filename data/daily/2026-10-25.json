@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "AI Radar",
+  "domain": "ai",
+  "snapshotDate": "2026-10-25",
+  "timezone": "America/Matamoros",
+  "savedAt": "2026-10-26T01:25:21.843Z",
+  "language": "es",
+  "collection": {
+    "mode": "manual-assisted",
+    "scope": "Selección semanal de anuncios y publicaciones en los siete días anteriores al corte de ejecución: 2026-10-19T01:16:52.568Z a 2026-10-26T01:16:52.568Z (America/Matamoros: 18 de octubre 20:16:52.568 a 25 de octubre 20:16:52.568). Hasta cinco acontecimientos distintos; snapshot autorizado del 2026-10-25.",
+    "queries": [
+      "AI model agent release October 2026 after:2026-10-18 before:2026-10-26",
+      "site.anthropic.com \"October\" \"2026\" after:2026-10-18 before:2026-10-26",
+      "site.minimax.io/news \"M3.1\""
+    ],
+    "limitations": [
+      "Selección editorial no exhaustiva; no garantiza cubrir todas las noticias del sector.",
+      "Fuentes abiertas y fechas verificadas; no se reprodujeron experimentos ni se probaron productos. Fechas de publicación sin hora limitan precisión intradía.",
+      "Comparación con el único snapshot anterior disponible, 2026-10-11; sin duplicados de acontecimientos en la selección.",
+      "La terminal y la sesión Node fallaron inicialmente; acceso local recuperado con Node. Validación completa con scripts/validate_snapshot.py --weekly y JSON Schema 2020-12 con formatos realizada correctamente en el entorno venv existente."
+    ]
+  },
+  "signals": [
+    {
+      "id": "AI-01",
+      "title": "Microsoft anuncia controles externos para agentes",
+      "topic": "seguridad-agentes",
+      "publishedDate": "2026-10-19",
+      "studyPublishedDate": null,
+      "eventGroupId": "ai-2026-10-19-1",
+      "sources": [
+        {
+          "publisher": "Microsoft",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-26T01:23:07Z"
+        }
+      ],
+      "evidence": {
+        "type": "anuncio-fabricante",
+        "summary": "Anuncia Guardian Agents y permisos adaptativos para contener el riesgo de agentes.",
+        "limitations": [
+          "La disponibilidad y eficacia de los controles no fueron probadas por el radar."
+        ],
+        "reviewScope": "Página original abierta: fecha, resumen y secciones pertinentes visibles; sin revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "alto",
+        "rationale": "Orienta el aislamiento y la gestión de permisos de agentes.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Revisar controles de identidad, permisos mínimos y detención independiente.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "anuncio",
+        "detail": "Capacidades y arquitectura anunciadas por Microsoft."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-02",
+      "title": "MiniMax lanza M3.1 Flash",
+      "topic": "modelos-agentes",
+      "publishedDate": "2026-10-19",
+      "studyPublishedDate": null,
+      "eventGroupId": "ai-2026-10-19-2",
+      "sources": [
+        {
+          "publisher": "MiniMax",
+          "url": "https://www.minimax.io/blog/minimax-m31f",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-26T01:23:07Z"
+        }
+      ],
+      "evidence": {
+        "type": "anuncio-fabricante",
+        "summary": "El fabricante anuncia acceso mediante API, M Plan y MiniMax Code y mejoras en tareas de agentes.",
+        "limitations": [
+          "Rendimiento y ahorro son afirmaciones del fabricante; no se probaron ni se verificó la publicación posterior de pesos."
+        ],
+        "reviewScope": "Página original abierta: fecha, resumen y secciones pertinentes visibles; sin revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "alto",
+        "rationale": "Ofrece otra opción para evaluar tareas largas de agentes.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Comparar calidad y costo por tarea en un conjunto fijo de pruebas.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "lanzamiento-anunciado",
+        "detail": "La fuente del lanzamiento indica que los pesos se publicarían después."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-03",
+      "title": "MiniMax presenta Mini Apps persistentes",
+      "topic": "herramientas-agentes",
+      "publishedDate": "2026-10-22",
+      "studyPublishedDate": null,
+      "eventGroupId": "ai-2026-10-22-3",
+      "sources": [
+        {
+          "publisher": "MiniMax",
+          "url": "https://www.minimax.io/blog/minimax-code-mini-app-1792650729",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-26T01:23:07Z"
+        }
+      ],
+      "evidence": {
+        "type": "anuncio-fabricante",
+        "summary": "Anuncia aplicaciones con interfaz, servidor Node y datos persistentes integradas en MiniMax Code mediante plugins y MCP.",
+        "limitations": [
+          "No se instaló el producto ni se auditaron las garantías de permisos."
+        ],
+        "reviewScope": "Página original abierta: fecha, resumen y secciones pertinentes visibles; sin revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "medio",
+        "rationale": "Permite evaluar interfaces persistentes para trabajo con agentes.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Examinar arquitectura y permisos con un prototipo aislado.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "disponibilidad-anunciada",
+        "detail": "El fabricante anuncia disponibilidad en sesiones locales de escritorio."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-04",
+      "title": "Claude Security incorpora escaneo continuo y seguimiento de correcciones",
+      "topic": "seguridad-codigo",
+      "publishedDate": "2026-10-21",
+      "studyPublishedDate": null,
+      "eventGroupId": "ai-2026-10-21-4",
+      "sources": [
+        {
+          "publisher": "Anthropic",
+          "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-26T01:23:07Z"
+        }
+      ],
+      "evidence": {
+        "type": "anuncio-fabricante",
+        "summary": "Anuncia seguimiento de cambios y hallazgos, API y conector MCP en beta pública para clientes Enterprise.",
+        "limitations": [
+          "No se midieron falsos positivos ni cobertura; testimonios comerciales no son evaluación independiente."
+        ],
+        "reviewScope": "Página original abierta: fecha, resumen y secciones pertinentes visibles; sin revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "alto",
+        "rationale": "Puede integrar revisión de seguridad en el ciclo de cambios.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Evaluar cobertura y falsos positivos con vulnerabilidades conocidas.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "beta-publica",
+        "detail": "Disponibilidad limitada a clientes Enterprise según el anuncio."
+      },
+      "biomedical": null
+    },
+    {
+      "id": "AI-05",
+      "title": "Claude Duet abre una preview de agente proactivo",
+      "topic": "agentes-proactivos",
+      "publishedDate": "2026-10-21",
+      "studyPublishedDate": null,
+      "eventGroupId": "ai-2026-10-21-5",
+      "sources": [
+        {
+          "publisher": "Anthropic",
+          "url": "https://claude.com/resources/articles/claude-duet",
+          "sourceType": "primary-institutional",
+          "accessedAt": "2026-10-26T01:23:07Z"
+        }
+      ],
+      "evidence": {
+        "type": "anuncio-fabricante",
+        "summary": "Anuncia preview de investigación por lista de espera, inicialmente para suscriptores Pro y Max de Estados Unidos.",
+        "limitations": [
+          "No se obtuvo acceso ni se verificaron autonomía, seguridad o fiabilidad; se usa la fecha del artículo, no la de notas relacionadas."
+        ],
+        "reviewScope": "Página original abierta: fecha, resumen y secciones pertinentes visibles; sin revisión sistemática ni validación independiente."
+      },
+      "impact": {
+        "level": "medio",
+        "rationale": "Permite estudiar supervisión y contexto en tareas que continúan en segundo plano.",
+        "assessmentType": "editorial"
+      },
+      "action": {
+        "description": "Revisar permisos y criterios de aprobación antes de plantear una prueba.",
+        "status": "proposed"
+      },
+      "state": {
+        "label": "preview-restringida",
+        "detail": "Acceso por lista de espera; no disponibilidad general."
+      },
+      "biomedical": null
+    }
+  ]
+}
